@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Fredoka;
+    src: url(fonts/FredokaOne-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+    font-family: Fredoka;
+}
+
+header {
+    background-color: yellow;
+    margin: 0px;
+}
+
+header .bottomHeader {
+    background-color: lightblue;
+    text-align: center;
+    font-size: 1vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+header a {
+    background-color: lightblue;
+    text-align: center; 
+}
+
+header .upperHeader {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+header div h1 {
+    margin: 0px;
+    padding-left: 10px;
+    font-weight: 100;
+    font-size: 1.75vw;
+}
+header div .changeColor:hover {
+    animation-name: changeColor;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeColor {
+    from{color: black;}
+    to{color: white;}
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+}
