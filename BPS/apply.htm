@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BPS - Division</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <script src="main.js" async defer></script>
+        <header>
+            <div class="mainHeader">
+                <div class="headerWrapper">
+                    <a href="index.htm"><img src="media/images/logo/burnleyCollege.png"></a>
+                    <h1 class="bigHeaderText"></h1>
+                    <a href="about.htm"><h1 class="bigHeaderText">About</h1></a>
+                    <div class="dropdownApply">
+                        <h1 class="bigHeaderText" id="dropbtn">Apply</h1>
+                        <div class="dropdownMenu-content">
+                            <a href="apply.htm">School Leavers (16-19)</a>
+                            <a href="apply.htm">University Study (19+)</a>
+                            <a href="apply.htm">Apprenticeships (16+)</a>
+                            <a href="apply.htm">Adult learning (19+)</a>
+                            <a href="apply.htm">Commercial</a>
+                        </div>
+                    </div>
+                    <a href="helpCenter.htm"><h1 class="bigHeaderText">Help Center</h1></a>
+                </div>
+                <span class="smallHeaderText" onclick="openNav()">≡</span>
+            </div>
+        </header>
+        <!-- The overlay -->
+        <div id="backgroundNav" class="backgroundNav">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="backgroundNav-content">
+            <a href="apply.htm">Apply</a>
+            <a href="#">About</a>
+            <a href="helpCenter.htm">Help Center</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="applyForm">
+                <form name="myform" method="blank" onsubmit="" >  
+                    Name: <input type="text" name="name"><br/>  
+                    Password: <input type="password" name="password"><br/>
+                    DOB (Date of Birth): <input type="text" name="DOB"><br/>
+                    <label for="course">Course:</label>
+                    <select id="course" name="course">
+                      <option value="school leavers">School Leavers (16-19)</option>
+                      <option value="university">University Study (19+)</option>
+                      <option value="apprenticeships">Apprenticeships (16+)</option>
+                      <option value="adult learning">Adult learning (19+)</option>
+                      <option value="commercial">Commercial</option>
+                    </select><br/>
+                    <a href="successful.htm">
+                        <input type="button" value="Send Application">
+                    </a>
+                </form>  
+            </div>       
+        </div>
+
+        <footer>
+            <div class="socialMediaLinks">
+                <h1>Follow us on social media!</h1>
+                <a href="https://www.facebook.com/burnleycollege/"><img src="media/images/socialMedia/facebookBurnley.png"></a>
+                <a href="https://www.instagram.com/burnleycollege/"><img src="media/images/socialMedia/instagramBurnley.png"></a>
+                <a href="https://twitter.com/burnleycollege"><img src="media/images/socialMedia/twitterBurnley.png"></a>
+                <a href="https://www.linkedin.com/company/burnley-college"><img src="media/images/socialMedia/linkedinBurnley.png"></a>
+            </div> 
+
+            <div class="whereToFindUs">
+                <h1>Our Address</h1>
+                <h6>
+                    Princess Way, Burnley BB12 0AN
+                </h6>
+            </div>
+
+            <div class="siteMap">
+                <h1>Sitemap</h1>
+                <div class="sitemapRow">
+                    <div class="sitemapCollum">
+                        <a><h5>Home Page</h5></a>
+                        <a><h5>About</h5></a>
+                        <a><h5>Apply</h5></a>
+                        <a><h5>Help Center</h5></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
+
+<!-- TODO: Make a footer and refereance all the images to the autors-->
+<!-- TODO: Add 2 new divs that will contain base text to be changed later>
+<!-- TODO: Add a scrolling picture wheel in accordace to the wireframe>
+<!-- TODO: Add JS script to change the background to black>

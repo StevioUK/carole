@@ -22,7 +22,7 @@ body {
 }
 
 .mainHeader {
-    width: 100vw;
+    width: 99vw;
     height: 85px;
     background-color: #0084ff79;
 
@@ -47,8 +47,13 @@ body {
     object-fit: contain;
 }
 
+.headerWrapper a {
+  text-decoration: none;
+}
 
-
+.headerWrapper h1:hover {
+  color: black;
+}
 
 
 /* The container <div> - needed to position the dropdown content */
@@ -252,7 +257,7 @@ footer h6 {
   to {opacity: 1}
 }
 
-.infoBoxOne {
+.infoBox {
   display: flex;
   justify-content: space-between;
   background-color: var(--backgroundBlue);
@@ -260,20 +265,20 @@ footer h6 {
   max-width: 1750px;
 }
 
-.infoBoxOneText {
+.infoBoxText {
   margin-left: 50px;
   height: auto;
   color: var(--white);
 }
 
-.infoBoxOneText h2 {
+.infoBoxText h2 {
   margin: 0%;
   font-size: 1.3vw;
   max-height: 300px;
   overflow: hidden;
 }
 
-.infoBoxOneImg img{
+.infoBoxImg img{
   max-width: 500px;
 }
 
@@ -292,7 +297,6 @@ footer {
   font-size: 1vw;
 }
 
-
 .sitemapRow:after {
   content: "";
   display: table;
@@ -304,7 +308,29 @@ footer {
 }
 
 
+.infoBoxButton {
+  font-size: 2vw;
+  border-radius: 5px;
+  float: right;
+  margin-top: 1.5vw;
+  margin-right: 2vw;
+  background-color: var(--backgroundBlue);
+  color: var(--white);
+  outline-style: solid; 
+  outline-color: white;
+  outline-width: thin;
+}
 
+.applyForm {
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 3vw;
+}
+
+.successful {
+  text-align: center;
+  font-size: 5vw;
+}
 
 
 
@@ -320,7 +346,7 @@ footer {
   }
   .smallHeaderText {
       display: block;
-      color: black;
+      color: white;
       text-align: right;
       padding-right: 15px;
       font-size: 3em; 
@@ -334,30 +360,30 @@ footer {
       object-fit: contain;
   }
 
-  .infoBoxOne {
+  .infoBox {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-top: 5vw;
   }
 
-  .infoBoxOneImg {
+  .infoBoxImg {
     position: relative;
   }
 
-  .infoBoxOneImg img {
+  .infoBoxImg img {
     height: 40vw;
   }
 
-  .infoBoxOneText {
+  .infoBoxText {
     margin-left: 1vw;
   }
 
-  .infoBoxOneText h1 {
+  .infoBoxText h1 {
     font-size: 5vw;
   }
 
-  .infoBoxOneText h2 {
+  .infoBoxText h2 {
     font-size: 1.7vw;
   }
 
