@@ -284,17 +284,25 @@ footer h6 {
 
 footer {
   height: 10vw;
+  color: white;
 }
 
 .sitemapCollum {
   float: left;
-  width: 100%;
+  width: 40%;
   padding: .1vw;
+  text-align: center;
+}
+
+.sitemapCollum a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 .sitemapCollum h5 {
   margin: .1vw;
-  font-size: 1vw;
+  font-size: .6vw;
 }
 
 .sitemapRow:after {
