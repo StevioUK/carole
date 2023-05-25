@@ -170,9 +170,6 @@ footer h6 {
   font-size: 1vw;
 }
 
-.sitemapCollum a h5 {
-
-}
 
 
 
@@ -271,11 +268,28 @@ footer h6 {
   color: var(--white);
 }
 
+.infoBoxText2 {
+  margin-left: 50px;
+  height: auto;
+  color: var(--white);
+}
+
 .infoBoxText h2 {
   margin: 0%;
   font-size: 1.3vw;
   max-height: 300px;
   overflow: hidden;
+}
+
+.infoBoxText2 h2 {
+  margin: 0%;
+  font-size: 1vw;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.infoBoxText2 h1 {
+  font-size: 3vw;
 }
 
 .infoBoxImg img{
